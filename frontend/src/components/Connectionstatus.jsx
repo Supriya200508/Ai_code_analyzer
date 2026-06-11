@@ -1,5 +1,5 @@
 /**
- * Connectionstatus
+ * ConnectionStatus
  * ────────────────
  * Banner that appears when the API is unreachable.
  * Polls /health every 5 s and dismisses itself once the server is back.

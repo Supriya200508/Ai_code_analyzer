@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import IssueCard        from "./IssueCard";
 import FixCard          from "./FixCard";
 import StatPill         from "./StatPill";
-import Connectionstatus from "./Connectionstatus";
+import ConnectionStatus from "./ConnectionStatus";
 import CodeDiffViewer   from "./CodeDiffViewer";
 import { SEVERITY }     from "../constants/severity";
 
@@ -202,7 +202,7 @@ export default function ResultsPanel({
               <p className="font-mono text-[10px] uppercase tracking-widest text-red-400 mb-1">error</p>
               <p className="text-[13px] text-slate-400">{error}</p>
             </div>
-            <Connectionstatus errorKind={errorKind} onRetry={onRetry} />
+            <ConnectionStatus errorKind={errorKind} onRetry={onRetry} />
           </div>
         )}
 
