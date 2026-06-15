@@ -10,7 +10,7 @@
  * Both throw ApiError so the UI always gets a ready-to-display message.
  */
 
-const API_URL    = "/api/v1/analysis/";
+const API_URL    = `${import.meta.env.VITE_API_URL1}/analysis/`;;
 const TIMEOUT_MS = 60_000;
 
 // ── Typed error ───────────────────────────────────────────────────────────────
