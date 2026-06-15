@@ -114,7 +114,7 @@ export default function ConnectionStatus({ errorKind, onRetry }) {
 
           {(errorKind === "network" || errorKind === "timeout") && (
             <a
-              href="http://localhost:8000/docs"
+              href={import.meta.env.VITE_DOCS_URL}
               target="_blank"
               rel="noreferrer"
               style={{
